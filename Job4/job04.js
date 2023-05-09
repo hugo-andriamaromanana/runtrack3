@@ -6,3 +6,5 @@ function bisextile(annee) {
         return false;
     }
 }
+
+console.log(bisextile(2020));

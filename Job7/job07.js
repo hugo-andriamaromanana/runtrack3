@@ -29,3 +29,5 @@ function jourtravaille(date) {
 
     return message;
 }
+
+console.log(jourtravaille(new Date(2020, 0, 1)));
