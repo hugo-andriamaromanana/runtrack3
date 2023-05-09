@@ -8,6 +8,6 @@
     
 </head>
 <script>
-    console.log("Hello world");
+    alert("Hello world");
 </script>
 </html>
