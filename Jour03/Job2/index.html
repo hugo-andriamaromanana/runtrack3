@@ -1,0 +1,35 @@
+<!--There will be 2 containers, one will be empty at first and the second one will have parts of a rainbow shuffled by default 
+    There is 6 parts of a rainbow, each named 'arc1..... arc6'
+    The goal here is the have a button and called 'Melanger', this button will mix the pictures in random places,
+    and the goal will be to click on the right part of the rainbow, starting from 1-6 if it's the wrong one the click will simply not do anything
+    if the right part of the rainbow has been clicked that piece of rainbow will jump to the top in the corresponding place
+    When the rainbow is complete on top, it will show (Congrats!!!!) 
+    all of this is an exercice to get familiarised with Jquery and DOM manipulation -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job 2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <p>Start by Shuffling and clicking on some buttons! You'll find a pattern, and from there try to put back the rainbow in place</p>
+        <button id="melanger">Shuffle</button>
+        <button id="resoudre">Drag up</button>
+        <button id="reset">Swap rainbows</button>
+        <div id="rangee1"></div>
+        <div id="rangee2">
+            <img id="arc1" src="arc1.png" alt="arc1">
+            <img id="arc2" src="arc2.png" alt="arc2">
+            <img id="arc3" src="arc3.png" alt="arc3">
+            <img id="arc4" src="arc4.png" alt="arc4">
+            <img id="arc5" src="arc5.png" alt="arc5">
+            <img id="arc6" src="arc6.png" alt="arc6">
+        </div>
+        <div id="rangee3"></div>
+        <script src="./script.js"></script>
+    </body> 
+    </html> 
