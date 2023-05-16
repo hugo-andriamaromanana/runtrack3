@@ -1,6 +1,3 @@
-/* I have 4 sections, i want them to be alinged at the top by default */
-/* I want them to show up as a 2x2 grid when between  768px and 1599px*/
-/* and i want them in a colomn when screen less than 767 */
 
 body {
     background-color: #75c776;
@@ -48,3 +45,56 @@ section {
         border-radius: 3px;
     }
 }
+
+/* now for the header */
+
+header {
+    background-color: #ffca4b;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header ul li {
+    margin-right: 25px;
+}
+
+header ul li:hover {
+    color: #ffffff;
+}
+
+/* hamburger button */
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    header ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
